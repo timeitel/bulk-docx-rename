@@ -10,8 +10,8 @@ namespace bulk_docx_rename
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("reading directory");
-            string dir = args[0];
+            Console.WriteLine("Enter directory to rename files: ");
+            string dir = Console.ReadLine();
             string[] files = Directory.GetFiles(dir);
 
             foreach (string file in files)
